@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Taschenrechner",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

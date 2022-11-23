@@ -1,0 +1,8 @@
+{
+  "name": "Taschenrechner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "b2d2e126"
+}
