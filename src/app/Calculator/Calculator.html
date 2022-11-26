@@ -1,0 +1,14 @@
+<h1><ion-text color="danger" [innerHtml]="getErrorMessage"></ion-text><h1>
+<h3><ion-text class="ion-text-right" [innerHtml]="getCalculation"></ion-text></h3>
+<h1><ion-text class="ion-text-right" [textContent]="displayedValue"></ion-text></h1>
+
+<ion-grid style="width: fit-content;">
+    <ion-row *ngFor="let row of rows">
+        <calculator-button *ngFor="let btnData of row"
+            [caption]=btnData.caption
+            [theme]=btnData.styleClass
+            [clickFunction]=btnData.clickFunction
+            [disabled]="errorMessage != '' && btnData.caption != 'C'">
+        </calculator-button>
+    </ion-row>
+</ion-grid>
